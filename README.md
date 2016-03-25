@@ -7,6 +7,8 @@ This a version for Java of Leonardo Cardoso's web [Facebook Link Preview](http:/
 
 It makes a preview from an url, grabbing all information. Such as title, relevant texts and images.
 
+The goal of this fork is to create a version of Leonardo's link preview in Java that is independent of Android plumbing, and can be plugged into server-side projects built with a Java stack.
+
 Note - Required Libs: [jsoup](http://jsoup.org/ "jsoup") to parse the html code.
 
 ## How to use with Gradle
@@ -15,7 +17,7 @@ Simply add the repository to your build.gradle file:
 ```groovy
 repositories {
 	jcenter()
-	maven { url 'https://github.com/leonardocardoso/mvn-repo/raw/master/maven-deploy' }
+	maven { url 'https://github.com/broadbear/mvn-repo/raw/master/maven-deploy' }
 }
 ```
 
