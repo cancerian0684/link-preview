@@ -1,3 +1,6 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
@@ -18,4 +21,8 @@ allprojects {
         maven { url 'https://github.com/leonardocardoso/mvn-repo/raw/master/maven-deploy' }
         jcenter()
     }
+}
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.8.3'
 }
