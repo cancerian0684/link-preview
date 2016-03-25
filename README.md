@@ -1,22 +1,13 @@
-LeoCardz Link Preview for Android
-=================================
+Link Preview
+============
 
-Developed by <a href='https://github.com/LeonardoCardoso' target='_blank'>@LeonardoCardoso</a>. 
+Fork developed by <a href='https://github.com/broadbear' target='_blank'>@Broadbear</a>. 
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android--Link--Preview-green.svg?style=true)](https://android-arsenal.com/details/1/2755)
+This a version for Java of Leonardo Cardoso's web [Facebook Link Preview](http://lab.leocardz.com/facebook-link-preview-php--jquery/ "Facebook Link Preview").
 
-This a version for Android of my web [Facebook Link Preview](http://lab.leocardz.com/facebook-link-preview-php--jquery/ "Facebook Link Preview").
+It makes a preview from an url, grabbing all information. Such as title, relevant texts and images.
 
-It makes a preview from an url, grabbing all informations. Such as title, relevant texts and images.
-
-![Preview](http://i.imgur.com/VSejRyV.gif)
-
-For more information about this, please access [Android Link Preview](http://android.leocardz.com/android-link-preview/ "Android Link Preview").
-
-For a sample app, please install it from [Android Link Preview on Google Play](https://play.google.com/store/apps/details?id=com.leocardz.link.preview&feature=search_result "Android Link Preview on Google Play").
-
-Note - Required Libs: [jsoup](http://jsoup.org/ "jsoup") is a smart lib to get the htlm code.
-
+Note - Required Libs: [jsoup](http://jsoup.org/ "jsoup") to parse the html code.
 
 ## How to use with Gradle
 
@@ -37,16 +28,9 @@ dependencies {
 }
 ```
 
-Apps using Android Link Preview
-=================================
-1. [Unshorten It](https://play.google.com/store/apps/details?id=com.leocardz.url.unshortener&feature=search_result "Unshorten It")
-
-2. ...
-
-
 Contact
 =================================
-If you are using this lib, let me know contacting me at android@leocardz.com then I add your app here in a list
+If you are using this lib, let me know by contacting me at broadbear@gmail.com then I can add your app to this list
 
 
 License
