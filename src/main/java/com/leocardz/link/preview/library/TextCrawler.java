@@ -24,7 +24,6 @@ public class TextCrawler {
 	public TextCrawler() {
 	}
 
-
 	/** Get html code */
 	public class GetCode {
 
