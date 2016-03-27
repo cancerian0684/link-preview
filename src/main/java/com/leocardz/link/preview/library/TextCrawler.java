@@ -24,6 +24,11 @@ public class TextCrawler {
 	public TextCrawler() {
 	}
 
+	public static SourceContent scrape(String url, int imageQty) {
+		SourceContent sourceContent = new TextCrawler().new GetCode(imageQty).doInBackground(url);
+		return sourceContent;
+	}
+	
 	/** Get html code */
 	public class GetCode {
 
@@ -35,9 +40,9 @@ public class TextCrawler {
 			this.imageQuantity = imageQuantity;
 		}
 
-		protected Void doInBackground(String... params) {
+		protected SourceContent doInBackground(String url) {
 			// Don't forget the http:// or https://
-			urls = SearchUrls.matches(params[0]);
+			urls = SearchUrls.matches(url);
 
 			if (urls.size() > 0)
 				sourceContent
@@ -115,7 +120,7 @@ public class TextCrawler {
 			sourceContent.setDescription(stripTags(sourceContent
 					.getDescription()));
 
-			return null;
+			return sourceContent;
 		}
 
 		/** Verifies if the content could not be retrieved */

@@ -2,16 +2,12 @@ package com.leocardz.link.preview.library;
 
 import org.junit.Test;
 
-import com.leocardz.link.preview.library.TextCrawler.GetCode;
-
 public class TextCrawlerTest {
 
 	@Test
 	public void testGetCode() {
-		String url = "http://www.google.com";
-		GetCode crawler = (new TextCrawler()).new GetCode(1);
-		crawler.doInBackground(url);
-		System.out.println("");
+		String url = "http://www.bungeeamerica.com";
+		SourceContent content = TextCrawler.scrape(url, TextCrawler.ALL);
+		System.out.println(content.toString());
 	}
-	
 }

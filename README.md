@@ -17,7 +17,7 @@ Simply add the repository to your build.gradle file:
 ```groovy
 repositories {
 	jcenter()
-	maven { url 'https://github.com/broadbear/mvn-repo/raw/master/maven-deploy' }
+	maven { url 'https://github.com/broadbear/maven-repo/raw/master' }
 }
 ```
 
