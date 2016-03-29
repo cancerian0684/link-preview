@@ -1,4 +1,4 @@
-package com.leocardz.link.preview.library;
+package org.broadbear.link.preview;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

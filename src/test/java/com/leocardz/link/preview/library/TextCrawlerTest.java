@@ -1,5 +1,7 @@
 package com.leocardz.link.preview.library;
 
+import org.broadbear.link.preview.SourceContent;
+import org.broadbear.link.preview.TextCrawler;
 import org.junit.Test;
 
 public class TextCrawlerTest {
