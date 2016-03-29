@@ -13,8 +13,12 @@ buildscript {
     }
 }
 
+group = 'com.leocardz'
+version = '1.2'
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'maven'
 
 allprojects {
     repositories {
@@ -25,7 +29,32 @@ allprojects {
 }
 
 dependencies {
-    compile 'org.jsoup:jsoup:1.8.3'
-    
+    compile 'org.jsoup:jsoup:1.8.3'    
     testCompile 'junit:junit:4.12'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}
+
+// mvn install:install-file 
+//  -DgroupId=com.leocardz 
+//  -DartifactId=link-preview 
+//  -Dversion=1.1 
+//  -Dpackaging=jar 
+//  -Dfile=C:\Users\broadbear\workspace\link-preview\build\libs\link-preview.jar 
+//  -DlocalRepositoryPath=C:\Users\broadbear\workspace\maven-repo
+
+uploadArchives {
+	repositories {
+		mavenDeployer {
+			repository(url: 'file:C:/Users/broadbear/workspace/maven-repo/')
+			pom.version = '1.2'
+			pom.artifactId = 'link-preview'
+		}
+	}
+}
+
+task prod {
+	dependsOn uploadArchives
 }
