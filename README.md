@@ -30,6 +30,13 @@ dependencies {
 }
 ```
 
+Or download the jar (without dependencies) from:
+
+
+
+## Usage
+TextCrawler.scrape([url string]);
+
 Contact
 =================================
 If you are using this lib, let me know by contacting me at broadbear@gmail.com then I can add your app to this list
