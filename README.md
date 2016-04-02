@@ -35,7 +35,10 @@ Or download the jar (without dependencies) from:
 <a href='https://github.com/broadbear/maven-repo/blob/master/org/broadbear/link-preview/1.2/link-preview-1.2.jar'>https://github.com/broadbear/maven-repo/blob/master/org/broadbear/link-preview/1.2/link-preview-1.2.jar</a>
 
 ## Usage
+
+```java
 TextCrawler.scrape([url string]);
+```
 
 Contact
 =================================
