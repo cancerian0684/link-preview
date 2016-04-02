@@ -32,7 +32,7 @@ dependencies {
 
 Or download the jar (without dependencies) from:
 
-
+<a href='https://github.com/broadbear/maven-repo/blob/master/org/broadbear/link-preview/1.2/link-preview-1.2.jar'>link-preview-1.2.jar</a>
 
 ## Usage
 TextCrawler.scrape([url string]);
